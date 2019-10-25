@@ -1,0 +1,31 @@
+button.btn-ex{
+  margin: 4px;
+  padding: 3px;
+  border-radius: 6px;
+  border: solid 1px blue;
+  background: linear-gradient(-45deg, #f0f0f0, #fff), 
+                linear-gradient(to top,rgb(105,130,238), rgb(181, 209, 255),rgb(206,231,255));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  font-size: 20pt;
+  font-stretch: condensed;
+}
+button.btn-ex:hover{
+  background: linear-gradient(45deg, #e0e0e0, #f0f0f0), 
+                linear-gradient(to top,rgb(61, 78, 150), rgb(117, 136, 165),rgb(206,231,255));
+  background-clip: content-box, border-box;
+}
+button.btn-ex:active {
+  background: linear-gradient(45deg, #f0f0f0, #fff), 
+                linear-gradient(to bottom,rgb(105,130,238), rgb(181, 209, 255),rgb(206,231,255));
+  background-clip: content-box, border-box;
+}
+button.btn-ex > span{
+  position: relatie;
+  display: block;
+  margin: 0 20px;
+}
+.content{
+  display: inline-flex;
+  flex-direction: column;
+}

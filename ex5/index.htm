@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Кнопки</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div class="content" id="buttonHolder">
+      <button type="button" class="btn-ex"><span>1</span></button>
+      <button type="button" class="btn-ex"><span>2</span></button>
+      <button type="button" class="btn-ex"><span>3</span></button>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      
+      function onClick(event){
+        var btns = $('#buttonHolder').children();
+        var firstBtn = btns.first();
+        btns.last().after(firstBtn);
+      }
+      $(document).ready(()=>{
+        $('#buttonHolder').children().click(onClick);
+      });
+    </script>
+  </body>
+</html>
